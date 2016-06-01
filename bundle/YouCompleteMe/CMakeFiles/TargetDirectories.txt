@@ -1,0 +1,10 @@
+/home/jianke/.vim/bundle/YouCompleteMe/BoostParts/CMakeFiles/BoostParts.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/CMakeFiles/copy_testdata.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/gmock/CMakeFiles/gmock.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/gmock/CMakeFiles/gmock_main.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/gmock/gtest/CMakeFiles/gtest.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/gmock/gtest/CMakeFiles/gtest_main.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/CMakeFiles/ycm_client_support.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/CMakeFiles/ycm_core.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/tests/CMakeFiles/ycm_core_tests.dir
+/home/jianke/.vim/bundle/YouCompleteMe/ycm/CMakeFiles/ycm_support_libs.dir

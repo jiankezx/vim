@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1320885068/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1320885068.dir/build.make CMakeFiles/cmTryCompileExec1320885068.dir/build
+make[1]: Entering directory `/home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1320885068.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1320885068.dir/CheckSymbolExists.c.o   -c /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1320885068
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1320885068.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1320885068.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1320885068 -rdynamic 
+CMakeFiles/cmTryCompileExec1320885068.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1320885068] Error 1
+make: *** [cmTryCompileExec1320885068/fast] Error 2
+
+File /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec455521369/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec455521369.dir/build.make CMakeFiles/cmTryCompileExec455521369.dir/build
+make[1]: Entering directory `/home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec455521369.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec455521369.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec455521369
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec455521369.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec455521369.dir/CheckFunctionExists.c.o  -o cmTryCompileExec455521369 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jianke/.vim/bundle/YouCompleteMe/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec455521369] Error 1
+make: *** [cmTryCompileExec455521369/fast] Error 2
+
+
